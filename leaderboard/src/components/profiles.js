@@ -21,7 +21,7 @@ function Item(data) {
 
                     <div className="item">
                         <img 
-                            src="/profileDefault.JPG" 
+                            src="/profileDefault.jpg" 
                             alt="profile" 
                             className="w-24 h-24 rounded-full object-cover"
                         />

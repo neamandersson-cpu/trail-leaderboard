@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    background-color: hsl(55, 85%, 95%);
+}
+
 :root{
     --color-dark: #2C3131;
     --color-light: #F3F3F2;
@@ -41,22 +45,20 @@
 }
 
 .board .duration > button:hover{
-    background-color: var(--color-dark);
+    background-color: #094C3A;
     color: var(--color-light);
 }
 
 .active{
-    background-color: var(--color-dark);
+    background-color: #094C3A;
     color: var(--color-light);
 }
 
-#profile{
-    /* display: flex; */
-
+#profile {
     margin-top: 3em;
 }
 
-#profile .flex{
+#profile .flex {
     display: flex;
     justify-content: space-between;
     gap: 1em;
@@ -64,20 +66,29 @@
     margin-bottom: 2em;
 }
 
-#profile .flex .item{
+#profile .flex .item {
     display: flex;
     align-items: center;
 }
 
-#profile .flex img{
+#profile .flex img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
-#profile .flex .info{
-   padding: 1em;
+#profile .flex .info {
+    padding: 1em;
+}
+
+.info {
+    flex: 1;
+}
+
+.score {
+    width: 80px;
+    text-align: right;
 }
 
 .text-dark{
@@ -85,12 +96,11 @@
 }
 
 .rank{
+    width: 40px;
+    line-height: 80px;
+    text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .navbar{
@@ -105,9 +115,9 @@
     align-items: center;
 
     padding: 1rem;
-    background: white;
+    background: hsl(55, 85%, 95%);
 
-    border-top: 1px solid #ddd;
+    border-top: 1px solid hsl(55, 24%, 53%);
 }
 
 .navbar button{
@@ -119,54 +129,49 @@
 
 .navbar .active{
     font-weight: bold;
+    color: #094C3A;
 }
 
-.scan-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+.scan-page {
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 40px;
 }
 
-.scan-button{
-    width: 220px;
-    height: 220px;
-
+.profile-pic {
+    width: 120px;
     border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.stats-card {
+    background-color: #094C3A;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.stat-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.scan-button {
+    margin-top: 100px;
+    width: 80%;
+    height: 100px;
+
+    background-color: #094C3A;
+    color: #ffffff;
 
     border: none;
+    border-radius: 20px;
 
     font-size: 2rem;
     font-weight: bold;
 
     cursor: pointer;
-
-    background-color: #2C3131;
-    color: white;
-}
-
-.popup{
-    position: fixed;
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    background: white;
-
-    padding: 2rem 3rem;
-
-    border-radius: 20px;
-
-    font-size: 1.5rem;
-    font-weight: bold;
-
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-
-.total-score{
-    margin-top: 2rem;
-    text-align: center;
 }

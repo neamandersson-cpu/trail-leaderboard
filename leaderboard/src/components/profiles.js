@@ -21,9 +21,9 @@ function Item(data) {
 
                     <div className="item">
                         <img 
-                            src="/profileDefault.jpg" 
-                            alt="profile" 
-                            className="w-24 h-24 rounded-full object-cover"
+                            src={value.img}
+                            alt="profile"
+                            className="profile-pic"
                         />
                         
                         <div className="info">

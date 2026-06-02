@@ -9,14 +9,14 @@ export default function Navbar({ page, setPage }) {
                 onClick={() => setPage("leaderboard")}
                 className={page === "leaderboard" ? "active" : ""}
             >
-                Leaderboard
+                Poänglista
             </button>
 
             <button 
                 onClick={() => setPage("scan")}
                 className={page === "scan" ? "active" : ""}
             >
-                Scan
+                Blippa station
             </button>
 
         </div>
